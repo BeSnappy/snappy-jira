@@ -1,0 +1,21 @@
+{
+    "name": "snappy/jira",
+    "description": "Snappy application for turning tickets into Jira issues.",
+    "authors": [
+        {
+            "name": "UserScape, Inc.",
+            "email": "it@userscape.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "guzzle/guzzle": "3.*",
+        "snappy/app-support": "dev-master"
+    },
+    "autoload": {
+        "classmap": [
+            "src/"
+        ]
+    },
+    "minimum-stability": "dev"
+}
