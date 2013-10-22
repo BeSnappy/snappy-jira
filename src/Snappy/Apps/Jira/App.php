@@ -60,12 +60,12 @@ class App extends BaseApp implements TagsChangedHandler {
 	 * @var array
 	 */
 	public $settings = array(
-		array('name' => 'username', 'type' => 'text', 'help' => 'Your Jira username'),
-		array('name' => 'password', 'type' => 'password', 'help' => 'Your Jira password'),
-		array('name' => 'url', 'type' => 'text', 'help' => 'Your Jira root URL'),
-		array('name' => 'project', 'type' => 'text', 'help' => 'Your Jira project key'),
-		array('name' => 'type', 'type' => 'text', 'help' => 'The issue type to assign to newly created issues', 'value' => 'New Feature'),
-		array('name' => 'Watch for tag', 'type' => 'text', 'placeholder' => '#jira', 'help' => 'Tickets with this tag will create an issue in Jira.'),
+		array('name' => 'username', 'type' => 'text', 'help' => 'Your Jira username', 'validate' => 'required'),
+		array('name' => 'password', 'type' => 'password', 'help' => 'Your Jira password', 'validate' => 'required'),
+		array('name' => 'url', 'type' => 'text', 'help' => 'Your Jira root URL', 'validate' => 'required'),
+		array('name' => 'project', 'type' => 'text', 'help' => 'Your Jira project key', 'validate' => 'required'),
+		array('name' => 'type', 'type' => 'text', 'help' => 'The issue type to assign to newly created issues', 'value' => 'New Feature', 'validate' => 'required'),
+		array('name' => 'tag', 'label' => 'Watch for tag', 'type' => 'text', 'placeholder' => '#jira', 'help' => 'Tickets with this tag will create an issue in Jira.', 'validate' => 'required'),
 	);
 
 	/**
