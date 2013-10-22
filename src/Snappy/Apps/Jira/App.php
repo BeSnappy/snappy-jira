@@ -34,6 +34,13 @@ class App extends BaseApp implements TagsChangedHandler {
 	public $icon = 'jira.png';
 
 	/**
+	 * The application service's main website.
+	 *
+	 * @var string
+	 */
+	public $website = 'https://www.atlassian.com/software/jira';
+
+	/**
 	 * The application author name.
 	 *
 	 * @var string
